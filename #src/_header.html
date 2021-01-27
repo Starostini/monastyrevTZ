@@ -1,6 +1,170 @@
 <header class="header">
-    <h1>Header</h1>
-    <p>
-        Lorem, ipsum dolor.
-    </p>
+    <nav class="header__nav">
+        <div class="header__nav-top navigation">
+            <div class="navigation__logo">
+                <a href="#" class="navigation__logo-btn"><img src="img/Group.svg" alt="Logotype"></a>
+            </div>
+            <div class="navigation__location location">
+                <a href="#" class="navigation__city-btn link">Владивосток</a>
+                <div class="location__pop display-none">
+                    <div class="location__text">Информация о доставке будет
+                        отображаться для региона:</div>
+                    <div class="location__city">Владивосток</div>
+                    <div class="location__choice">
+                        <a href="#" class="location__choice-agree">Да, выбрать</a>
+                        <a href="#" class="location__choice-disagree">Нет, выбрать другой город</a>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation__menu-sm">
+                <a href="#" class="navigation__btn link">Адреса аптек</a>
+                <a href="#" class="navigation__btn link">Доставка</a>
+                <a href="#" class="navigation__btn link">О нас</a>
+                <a href="#" class="navigation__btn link">Акции</a>
+            </div>
+            <div class="navigation__di"><a href="#" class="navigation__di-btn">Версия для слабовидящих</a></div>
+            <div class="navigation__phone"><a href="tel:88007077733" class="navigation__phone-btn link">8 800 707 77
+                    33</a>
+            </div>
+        </div>
+        <div class="header__nav-bottom navigation">
+            <div class="navigation__catalog drop-menu">
+                <ul>
+                    <li class="head-drop"><a href="#" class="navigation__catalog-btn">Каталог товаров</a>
+                        <ul class="menu-types drop">
+                            <li class="category"><a href="#" class="category__link">категории</a>
+                                <ul>
+                                    <li class=""><a href="#">Аптечные товары</a>
+                                        <ul class="">
+                                            <li><a href="#">БАДы и Витамины</a></li>
+                                            <li><a href="#">Косметические средства с лечебным эффектом</a></li>
+                                            <li><a href="#">Лекарственные препараты</a></li>
+                                            <li><a href="#">Лечебное и диетическое питание</a></li>
+                                            <li><a href="#">Медицинские изделия</a></li>
+                                            <li><a href="#">Минеральные воды</a></li>
+                                            <li><a href="#">Спортивное питание</a></li>
+                                            <li><a href="#">Для здоровья</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Косметика</a></li>
+                                    <li><a href="#">Здоровое питание</a></li>
+                                    <li><a href="#">Для дома и семьи</a></li>
+                                    <li><a href="#">Мама и малыш</a></li>
+                                    <li><a href="#">Оптика</a></li>
+                                    <li><a href="#">Медицинские приборы</a></li>
+                                    <li><a href="#">Скидки</a></li>
+                                </ul>
+                            </li>
+                            <li class="category"><a href="#" class="category__link brand">бренд</a>
+                                <ul>
+                                    <li class="next-drop"><a href="#">Yamaha</a>
+                                        <ul>
+                                            <li><a href="#">2017</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Kawasaki</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="navigation__search">
+                <form class="navigation__form">
+                    <input class="navigation__search-string" type="search" value=""
+                        placeholder="Средство,  действующее вещество, проблема">
+
+                    <button class="navigation__search-btn" type="button" id="search-btn"></button>
+                </form>
+            </div>
+            <div class="navigation__profile">
+                <a href="#" class="navigation__profile-btn">
+                    <div class="navigation__profile-name">Константин</div>
+                    <div class="navigation__profile-text">Ваш профиль</div>
+                </a>
+            </div>
+            <a href="#" class="navigation__favorites"></a>
+            <a href="#" class="navigation__cart"></a>
+        </div>
+    </nav>
+    <div class="header__cities-mask display-none"></div>
+    <div class="header__cities cities display-none">
+        <h3 class="cities__title">Выберите город</h3>
+        <ul class="cities__list">
+            <li class="cities__item top"><a href="#" class="cities__item-btn">Владивосток<span> 12 аптек</span></a></li>
+            <li class="cities__item"><a href="#" class="cities__item-btn">Де-Фриз<span> 12 аптек</span></a></li>
+            <li class="cities__item"><a href="#" class="cities__item-btn">Арсеньев<span> 12 аптек</span></a></li>
+            <li class="cities__item"><a href="#" class="cities__item-btn">Артем<span> 12 аптек</span></a></li>
+            <li class="cities__item"><a href="#" class="cities__item-btn">Большой Камень<span> 12 аптек</span></a></li>
+            <li class="cities__item"><a href="#" class="cities__item-btn">Вольно-Надеждинское<span> 12 аптек</span></a>
+            </li>
+            <li class="cities__item"><a href="#" class="cities__item-btn">Врангель<span> 12 аптек</span></a></li>
+            <li class="cities__item"><a href="#" class="cities__item-btn">Дальнегорск<span> 12 аптек</span></a></li>
+            <li class="cities__item"><a href="#" class="cities__item-btn">Находка<span> 12 аптек</span></a></li>
+            <li class="cities__item"><a href="#" class="cities__item-btn">Сибирцево<span> 12 аптек</span></a></li>
+            <li class="cities__item"><a href="#" class="cities__item-btn">Славянка<span> 12 аптек</span></a></li>
+            <li class="cities__item"><a href="#" class="cities__item-btn">Спасск-Дальний<span> 12 аптек</span></a></li>
+            <li class="cities__item"><a href="#" class="cities__item-btn">Уссурийск<span> 12 аптек</span></a></li>
+            <li class="cities__item top"><a href="#" class="cities__item-btn">Москва<span> 12 аптек</span></a></li>
+            <li class="cities__item top"><a href="#" class="cities__item-btn">Новосибирск<span> 12 аптек</span></a></li>
+            <li class="cities__item top"><a href="#" class="cities__item-btn">Хабаровск<span> 12 аптек</span></a></li>
+        </ul>
+    </div>
+
 </header>
+
+<div class="dropdown">
+    <a href="#" class="navigation__catalog-btn dropbtn">Каталог товаров</a>
+    <ul id="myDropdown" class="dropdown-content">
+        <li class="dropdown__menu">
+            <a href="#home" class="categ">категории</a>
+            <ul class="dropdown__1">
+                <li class="">
+                    <a href="#">Аптечные товары</a>
+                    <!-- <ul class="">
+                        <li><a href="#">БАДы и Витамины</a></li>
+                        <li><a href="#">Косметические средства с лечебным эффектом</a></li>
+                        <li><a href="#">Лекарственные препараты</a></li>
+                        <li><a href="#">Лечебное и диетическое питание</a></li>
+                        <li><a href="#">Медицинские изделия</a></li>
+                        <li><a href="#">Минеральные воды</a></li>
+                        <li><a href="#">Спортивное питание</a></li>
+                        <li><a href="#">Для здоровья</a></li>
+                    </ul> -->
+                </li>
+                <li><a href="#">Косметика</a></li>
+                <li><a href="#">Здоровое питание</a></li>
+                <li><a href="#">Для дома и семьи</a></li>
+                <li><a href="#">Мама и малыш</a></li>
+                <li><a href="#">Оптика</a></li>
+                <li><a href="#">Медицинские приборы</a></li>
+                <li><a href="#">Скидки</a></li>
+            </ul>
+        </li>
+        <li class="dropdown__menu">
+            <a href="#" class="categ">бренд</a>
+            <ul class="dropdown__1 display-none">
+                <li class="">
+                    <a href="#">Косметика</a>
+                    <!-- <ul class="">
+                        <li><a href="#">БАДы и Витамины</a></li>
+                        <li><a href="#">Косметические средства с лечебным эффектом</a></li>
+                        <li><a href="#">Лекарственные препараты</a></li>
+                        <li><a href="#">Лечебное и диетическое питание</a></li>
+                        <li><a href="#">Медицинские изделия</a></li>
+                        <li><a href="#">Минеральные воды</a></li>
+                        <li><a href="#">Спортивное питание</a></li>
+                        <li><a href="#">Для здоровья</a></li>
+                    </ul> -->
+                </li>
+                <li><a href="#">Скидки</a></li>
+                <li><a href="#">Медицинские приборы</a></li>
+                <li><a href="#">Мама и малыш</a></li>
+                <li><a href="#">Для дома и семьи</a></li>
+                <li><a href="#">Оптика</a></li>
+                <li><a href="#">Здоровое питание</a></li>
+                <li><a href="#">Аптечные товары</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
